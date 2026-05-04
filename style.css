@@ -64,3 +64,8 @@ footer {
 .post a:hover {
     text-decoration: underline;
 }
+
+.post:hover {
+    background-color: #f5f5f5;
+    transition: 0.2s ease;
+}
