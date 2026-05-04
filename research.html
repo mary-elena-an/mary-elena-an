@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+    <h1>Research</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="papers.html">Papers</a>
+        <a href="research.html">Research</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Overview</h2>
+    <p>
+        My research focuses on machine learning for electronic health records (EHR), with an emphasis on
+        risk prediction for chronic and metabolic diseases such as MASLD. I am particularly interested in
+        developing models that are both high-performing and clinically interpretable, while addressing issues
+        of fairness, temporal structure, and real-world deployment in healthcare settings.
+    </p>
+</section>
+
+<section>
+    <h2>Project 1: Fairness-Aware Machine Learning for MASLD Prediction</h2>
+
+    <p>
+        I developed and evaluated multiple supervised machine learning models—including LASSO logistic regression,
+        random forests, XGBoost, and neural networks—on a large-scale EHR cohort for MASLD prediction, achieving
+        AUROC values up to 0.85.
+    </p>
+
+    <p>
+        To improve interpretability, I constructed a sparse LASSO-based model using the top 10 SHAP-selected features,
+        maintaining strong predictive performance (AUROC = 0.84) while relying only on routinely collected primary care variables.
+    </p>
+
+    <p>
+        Additionally, I implemented fairness-aware postprocessing using equal opportunity constraints to reduce disparities
+        in true positive rates across racial and ethnic subgroups, explicitly quantifying trade-offs between fairness and sensitivity.
+    </p>
+
+    <p>
+        <b>Methods/tools:</b> supervised machine learning, SHAP analysis, fairness evaluation (Fairlearn), PySpark, Python
+    </p>
+</section>
+
+<section>
+    <h2>Project 2 (In Progress): Temporal Graph Framework for Personalized Chronic Disease Risk Prediction</h2>
+
+    <p>
+        I am currently developing a temporal graph-based deep learning framework to model longitudinal patient trajectories
+        from electronic health records (EHRs), with a focus on chronic disease risk prediction.
+    </p>
+
+    <p>
+        This work involves designing a personalized graph construction strategy that captures patient-specific clinical
+        relationships and temporal dependencies across visits and medical events.
+    </p>
+
+    <p>
+        The model is being evaluated on chronic disease prediction tasks, with an emphasis on learning expressive
+        patient-level temporal representations.
+    </p>
+
+    <p>
+        <b>Methods/tools:</b> graph neural networks (GNNs), graph convolutional networks (GCNs), temporal modeling,
+        EHR reconstruction, Python
+    </p>
+</section>
+
+<section>
+    <h2>Project 3 (Future Work): Explainable Temporal Graph Neural Networks for Clinical Decision Support</h2>
+
+    <p>
+        Future work focuses on integrating explainability and interpretability techniques into temporal graph neural networks
+        to improve transparency in patient-specific disease trajectory modeling.
+    </p>
+
+    <p>
+        The goal is to align learned temporal graph representations with clinically meaningful features, enabling more
+        interpretable predictions and supporting clinical decision-making.
+    </p>
+
+    <p>
+        This direction aims to improve the trustworthiness and real-world usability of temporal graph models in healthcare
+        environments.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Mary Elena An</p>
+</footer>
+
+</body>
+</html>
